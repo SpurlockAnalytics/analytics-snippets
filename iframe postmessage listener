@@ -1,0 +1,4 @@
+window.addEventListener('message', function (event) {
+  dataLayer.push(event.data);
+  },
+false)
