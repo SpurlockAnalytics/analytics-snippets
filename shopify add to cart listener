@@ -1,0 +1,10 @@
+<script>
+$(document).ajaxComplete(function(event, request, settings){
+  if(settings.url == "/cart/add.js"){
+    dataLayer = window.dataLayer || []
+    dataLayer.push({
+      "event": 'addToCart'
+    })
+  }
+})
+</script>
